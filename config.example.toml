@@ -1,0 +1,30 @@
+sql_server = 'LI-DEV-VM-SQL02\SQL2019'
+inventory_server = 'LI-DEV-VM-SQL02.kalibratetech.com\SQL2019'
+core_sql_server = 'LI-DEV-VM-SQL02.kalibratetech.com\SQL2019'
+database = 'near_signals'
+core_procedure_database = 'HD_Panel_Store_Level_Summary_v2'
+driver = 'SQL Server'
+bulk_driver = 'ODBC Driver 17 for SQL Server'
+
+signals_root = 'I:/Near_download/signals/'
+masterfile_root = 'I:/Near_download/HD_Panel_Data_Source/AllWeeks_HDv2/'
+excel_dir = 'I:/Near_download/core_metrics_municipality/HD_V2'
+
+signals_bucket = 'signals1.5'
+partner_bucket = 'partner-kalibrate'
+signals_profile = 'azira-signals'
+partner_profile = 'azira-partner'
+signals_region = 'us-east-1'
+geojson_prefix = 'signals_weekly_jsons/'
+ppoi_prefix = 'ppoi_change_log/'
+masterfile_prefix = 'hdv2/'
+masterfile_strip_chars = 13
+masterfile_inventory_strip_chars = 5
+masterfile_mapping_verified = false
+
+sync_bucket = 'signals1.5'
+sync_prefix = 'hdv2/'
+sync_root = 'I:/Near_download/HD_Panel_Data_Source/HDv2_Download'
+sync_credentials_file = ''
+
+recipients = 'hartwell.hooper@kalibrate.com;marvis.ediagbonya@kalibrate.com'

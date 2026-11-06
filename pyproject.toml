@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azira-download-part01"
+version = "0.1.0"
+description = "Standalone Azira polygon, PPOI, and municipality imports"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "boto3==1.42.24", "pandas==2.1.4", "SQLAlchemy==2.0.25",
+    "pyodbc==5.0.1", "openpyxl==3.1.5", "geopandas==1.0.1",
+    "shapely==2.1.2", "pytz==2023.3.post1",
+]
+
+[project.scripts]
+azira-part01 = "azira_download_part01.cli:main"
+azira-s3-sync = "azira_download_part01.s3_bucket_synchronization:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
